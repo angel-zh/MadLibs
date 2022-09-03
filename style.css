@@ -1,11 +1,19 @@
-body {
-    width: 600px;
-    margin: 50px auto;
-  }
-  input {
-    display: flex;
-    margin: 10px 0;
-  }
-  span {
-    color: red;
-  }
+h1 {
+  text-align: center;
+  margin: 40px;
+}
+h2 {
+  text-align: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+input {
+  display: flex;
+  margin: 10px 0;
+  width: 200px;
+}
+span {
+  color: red;
+}
