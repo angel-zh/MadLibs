@@ -5,28 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mad Libs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Hi+Melody&family=Mansalva&display=swap" rel="stylesheet">
+  <title>Mad Libs: A Valentine's Note</title>
 </head>
 
 <body>
   <h1>A Valentine's Note</h1>
-  <h2>Mad Libs</h2>
+  <h2>A Game of Mad Libs</h2>
   <div class="form">
-    <form id="formData">
+    <form id="madLibsForm">
       <label for="recipient">Enter your crush's name: </label>
       <input id="recipient" type="text" name="recipient" placeholder="crush's name">
-      <label for="ordinalNumber">Enter an ordinal number </label>
+      <label for="ordinalNumber">Enter an ordinal number:</label>
       <input id="ordinalNumber" type="text" name="ordinalNumber" placeholder="first, second, third, etc.">
       <label for="bodyPart1">Enter a body part:</label>
       <input id="bodyPart1" type="text" name="bodyPart1" placeholder="body part">
-      <label for="adjective">Enter an adjective:</label>
-      <input id="adjective" type="text" name="adjective" placeholder="a word that describes something">
+      <label for="adjective1">Enter an adjective:</label>
+      <input id="adjective1" type="text" name="adjective1" placeholder="a word that describes something">
       <label for="livingThing">Enter a living thing:</label>
       <input id="livingThing" type="text" name="livingThing" placeholder="living thing">
       <label for="place">Enter a place:</label>
       <input id="place" type="text" name="place" placeholder="place">
-      <label for="feeling">Enter a feeling as an adjective:</label>
+      <label for="feeling">Enter a feeling(adjective):</label>
       <input id="feeling" type="text" name="feeling" placeholder="angry, surprised, etc.">
+      <label for="adjective2">Enter a verb:</label>
+      <input id="adjective2" type="text" name="adjective2" placeholder="a word that describes something">
       <label for="verb">Enter a verb:</label>
       <input id="verb" type="text" name="verb" placeholder="an action word">
       <label for="bodyPart2">Enter another body part:</label>
@@ -36,10 +41,8 @@
       <button id="submit">Submit</button>
     </form>
   </div>
+  <div class="newStory"></div>
 
-  <!--   <p class="greeting">Dear <span>Lover</span>,</p>
-  <p class="message">I was in love the <span>first</span> time I saw your <span>eyes</span>. You are <span>beautiful</span> and I am the luckiest <span>person</span> in the entire <span>world</span>. I am so <span>glad</span> that we met. There is simply no one as <span>perfect</span> as you. I <span>love</span> you more every single day and I can't wait to hold you in my <span>arms</span> again!</p>
-  <p class="closing">Love, Me</p> -->
 </body>
 
 </html>
