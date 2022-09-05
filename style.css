@@ -1,8 +1,14 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+  background: #caf0f8;
+}
 h1 {
   text-align: center;
   margin: 30px 0 0 0;
   font-family: 'Mansalva', cursive;
   font-size: 40px;
+  color: #f28482;
 }
 h2 {
   text-align: center;
@@ -11,9 +17,16 @@ h2 {
 }
 .form {
   font-family: 'Hi Melody', cursive;
+  background: #f9d6d5;
   font-size: 22px;
   display: flex;
   justify-content: center;
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #90e0ef;
 }
 input {
   font-family: 'Dosis', sans-serif;
@@ -22,9 +35,17 @@ input {
   margin: 0 0 15px 0;
   width: 225px;
 }
+#storySection {
+  width: 500px;
+  margin: 0 auto;
+}
 span {
   color: rgb(255, 131, 179);
   font-family: 'Mansalva', cursive;
   font-size: 30px;
-  
+  text-decoration: underline;
+  background: white;
+}
+.hide {
+  display: none;
 }

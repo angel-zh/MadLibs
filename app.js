@@ -1,25 +1,28 @@
-const recipient = document.getElementById("recipient").value;
-const ordinalNumber = document.getElementById("ordinalNumber").value;
-const bodyPart1 = document.getElementById("bodyPart1").value;
-const adjective1 = document.getElementById("adjective1").value;
-const livingThing = document.getElementById("livingThing").value;
-const place = document.getElementById("place").value;
-const feeling = document.getElementById("feeling").value;
-const adjective2 = document.getElementById("adjective2").value;
-const verb = document.getElementById("verb").value;
-const bodyPart2 = document.getElementById("bodyPart2").value;
-const writer = document.getElementById("writer").value;
+const recipient = document.getElementById("recipient");
+const ordinalNumber = document.getElementById("ordinalNumber");
+const bodyPart1 = document.getElementById("bodyPart1");
+const adjective1 = document.getElementById("adjective1");
+const livingThing = document.getElementById("livingThing");
+const place = document.getElementById("place");
+const feeling = document.getElementById("feeling");
+const adjective2 = document.getElementById("adjective2");
+const verb = document.getElementById("verb");
+const bodyPart2 = document.getElementById("bodyPart2");
+const writer = document.getElementById("writer");
 const madLibsForm = document.getElementById("madLibsForm");
-const newStory = document.querySelector(".newStory");
+const storySection = document.getElementById("storySection");
 
 function createStory() {
-  newStory.innerHTML = `Dear <span>${recipient}</span>,<br>
-I was in love the <span>${ordinalNumber}</span> time I saw your <span>${bodyPart1}</span>. You are <span>${adjective1}</span> and I am the luckiest <span>${livingThing}</span> in the entire <span>${place}</span>. I am so <span>${feeling}</span> that we met. There is simply no one as <span>${adjective2}</span> as you. I <span>${verb}</span> you more every single day and I can't wait to hold you in my <span>${bodyPart2}</span> again!<br>
-Love,<br>
-${writer}`;
+  const story = `<p>Dear <span>${recipient.value}</span>,</p>
+<p>I was in love the <span>${ordinalNumber.value}</span> time I saw your <span>${bodyPart1.value}</span>. You are <span>${adjective1.value}</span> and I am the luckiest <span>${livingThing.value}</span> in the entire <span>${place.value}</span>. I am so <span>${feeling.value}</span> that we met. There is simply no one as <span>${adjective2.value}</span> as you. I <span>${verb.value}</span> you more every single day and I can't wait to hold you in my <span>${bodyPart2.value}</span> again!</p>
+<p>Love,</p>
+<p><span>${writer.value}</span></p>`;
+  storySection.innerHTML = story;
 }
 
 madLibsForm.addEventListener("submit", function (event) {
   event.preventDefault();
+  madLibsForm.classList.add("hide");
   createStory();
+  storySection.classList.remove("hide");
 });
