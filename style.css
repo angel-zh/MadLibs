@@ -1,5 +1,4 @@
 body {
-  font-family: 'Dosis', sans-serif;
   font-size: 25px;
   background: #caf0f8;
 }
@@ -7,15 +6,16 @@ h1 {
   text-align: center;
   margin: 30px 0 0 0;
   font-family: 'Mansalva', cursive;
-  font-size: 40px;
+  font-size: 43px;
   color: #f28482;
+  text-shadow: 2px 1px 3px black;
 }
 h2 {
   text-align: center;
   font-family: 'Hi Melody', cursive;
   font-size: 28px;
 }
-.form {
+#formContainer {
   font-family: 'Hi Melody', cursive;
   background: #f9d6d5;
   font-size: 22px;
@@ -26,7 +26,7 @@ h2 {
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 3px 3px 5px #90e0ef;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 input {
   font-family: 'Dosis', sans-serif;
@@ -40,15 +40,10 @@ input {
   margin: 0 auto;
 }
 span {
-  color: rgb(255, 131, 179);
+  color: #f28482;
   font-family: 'Mansalva', cursive;
   font-size: 30px;
-  text-decoration: underline;
   background: white;
-}
-
-.hide {
-  display: none;
 }
 
 #submit {
@@ -58,6 +53,19 @@ span {
   margin: 0 auto;
   border: 1px solid black;
   border-radius: 5px;
-  color: #f28482;
-  background: white;
+  color: white;
+  background: #f28482;
+}
+#submit:hover {
+  background: rgba(242, 132, 130, .6);
+}
+footer {
+  text-align: center;
+  font-size: 23px;
+  margin: 10px;
+  font-family: 'Hi Melody', cursive;
+}
+
+.hide {
+  display: none;
 }

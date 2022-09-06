@@ -11,6 +11,8 @@ const bodyPart2 = document.getElementById("bodyPart2");
 const writer = document.getElementById("writer");
 const madLibsForm = document.getElementById("madLibsForm");
 const storySection = document.getElementById("storySection");
+const formContainer = document.getElementById("formContainer");
+const restart = document.getElementById("restart");
 
 function createStory() {
   const story = `<p>Dear <span>${recipient.value}</span>,</p>
@@ -22,7 +24,9 @@ function createStory() {
 
 madLibsForm.addEventListener("submit", function (event) {
   event.preventDefault();
+  formContainer.removeAttribute("id");
   madLibsForm.classList.add("hide");
-  createStory();
+  createStory();  
   storySection.classList.remove("hide");
+  restart.classList.remove("hide");
 });
