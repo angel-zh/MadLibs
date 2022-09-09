@@ -54,10 +54,10 @@ input {
 span {
   color: #f28482;
   font-family: 'Mansalva', cursive;
-  font-size: 28px;
+  font-size: 25px;
 }
 
-#submit {
+button {
   font-family: 'Dosis', sans-serif;
   font-size: 18px;
   display: flex;
@@ -66,22 +66,16 @@ span {
   border-radius: 5px;
   color: white;
   background: #f28482;
+  padding: 3px 6px;
 }
 
-#submit:hover {
-  background: rgba(242, 132, 130, .6);
+button:hover {
+  background: #ffaaa8;
 }
 
-#restart {
-  display: flex;
-  margin: 30px auto;
-  font-size: 20px;
-  font-family: 'Dosis', sans-serif;
-  border: 1px solid black;
-  border-radius: 5px;
-  color: white;
-  background: #f28482;
-  padding: 2px 5px;
+button:active {
+  background: white;
+  color: #ffaaa8;
 }
 
 footer {
@@ -89,6 +83,10 @@ footer {
   font-size: 23px;
   margin: 10px;
   font-family: 'Hi Melody', cursive;
+}
+
+#restart {
+  margin: 30px auto;
 }
 
 .hide {
