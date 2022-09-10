@@ -1,14 +1,14 @@
-let recipient = document.getElementById("recipient");
-let ordinalNumber = document.getElementById("ordinalNumber");
-let bodyPart1 = document.getElementById("bodyPart1");
-let adjective1 = document.getElementById("adjective1");
-let livingThing = document.getElementById("livingThing");
-let place = document.getElementById("place");
-let feeling = document.getElementById("feeling");
-let adjective2 = document.getElementById("adjective2");
-let verb = document.getElementById("verb");
-let bodyPart2 = document.getElementById("bodyPart2");
-let writer = document.getElementById("writer");
+const recipient = document.getElementById("recipient");
+const ordinalNumber = document.getElementById("ordinalNumber");
+const bodyPart1 = document.getElementById("bodyPart1");
+const adjective1 = document.getElementById("adjective1");
+const livingThing = document.getElementById("livingThing");
+const place = document.getElementById("place");
+const feeling = document.getElementById("feeling");
+const adjective2 = document.getElementById("adjective2");
+const verb = document.getElementById("verb");
+const bodyPart2 = document.getElementById("bodyPart2");
+const writer = document.getElementById("writer");
 const madLibsForm = document.getElementById("madLibsForm");
 const storySection = document.getElementById("storySection");
 const formContainer = document.getElementById("formContainer");
@@ -26,12 +26,12 @@ madLibsForm.addEventListener("submit", function (event) {
   event.preventDefault();
   formContainer.removeAttribute("id");
   madLibsForm.classList.add("hide");
-  createStory();  
+  createStory();
   storySection.classList.remove("hide");
   restart.classList.remove("hide");
 });
 
-restart.addEventListener("click", function() {
+restart.addEventListener("click", function () {
   formContainer.setAttribute("id", "formContainer");
   madLibsForm.classList.remove("hide");
   madLibsForm.reset();
