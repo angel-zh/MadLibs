@@ -18,7 +18,7 @@ function createStory() {
   const story = `<p>Dear <span>${recipient.value}</span>,</p>
 <p>I was in love the <span>${ordinalNumber.value}</span> time I saw your <span>${bodyPart1.value}</span>. You are <span>${adjective1.value}</span> and I am the luckiest <span>${livingThing.value}</span> in the entire <span>${place.value}</span>. I am so <span>${feeling.value}</span> that we met. There is simply no one as <span>${adjective2.value}</span> as you. I <span>${verb.value}</span> you more every single day and I can't wait to hold you in my <span>${bodyPart2.value}</span> again!</p>
 <p>Love,</p>
-<p><span">${writer.value}</span></p>`;
+<p><span>${writer.value}</span></p>`;
   storySection.innerHTML = story;
 }
 
